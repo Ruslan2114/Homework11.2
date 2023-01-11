@@ -1,0 +1,22 @@
+ <!doctype html>
+ <html lang="ru">
+      <head>
+          <meta charset="UTF-8">
+          <title>Все кандидаты</title>
+      </head>
+      <body>
+      <h1>Все кандидаты</h1>
+        {% for cand in cand %}
+            <p><a href="/candidate/{{cand['id']}}">{{cand['name']}}</a></p>
+        {% endfor %}
+
+      </body>
+ </html>
+
+
+
+
+
+
+
+
